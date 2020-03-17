@@ -21,8 +21,9 @@ You will find this is far easier than the opposite task of using CSS to cram you
 
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    ;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 p {
@@ -32,7 +33,6 @@ p {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
     text-align: center;
 }
 
@@ -54,6 +54,26 @@ a {
     text-decoration: none;
 }
 
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
 li {
     text-decoration: none;
     list-style: none;
@@ -65,18 +85,51 @@ li {
     text-decoration: none;
 }
 
+#clipheader {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 .cliplist {
-    line-height: .5em;
+    line-height: 1.5em;
     text-align: left;
 }
 
 .clip {
-    padding: 10px;
+    text-align: left;
+    padding: 14px;
 }
 
 .clipbyline {
-    text-align: right;
+    text-align: center;
     font-style: italic;
+    font-size: 12px;
+}
+
+/** resume styles**/
+.experience {
+    margin-top: 35px;
+    font-size: 12px;
+}
+
+.resume {
+    padding-top: : 5px;
+}
+
+.workplace {
+    font-weight: bold;
+}
+
+.resume p {
+    font-size: 14px;
+}
+
+/**about styles**/
+#about {
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 /*********************************************************************
