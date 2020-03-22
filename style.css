@@ -22,7 +22,6 @@ You will find this is far easier than the opposite task of using CSS to cram you
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 20px;
-    ;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -36,11 +35,6 @@ p {
     text-align: center;
 }
 
-.container.photo {
-    padding: 0;
-    position: relative;
-}
-
 img {
     width: 100%;
 }
@@ -48,26 +42,33 @@ img {
 .nav {
     padding: 20px;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 a:visited {
     text-decoration: none;
     color: black;
+    font-weight: lighter;
 }
 
 a:hover {
     text-decoration: none;
     color: white;
+    font-weight: lighter;
 }
 
 a:focus {
     text-decoration: none;
     color: black;
+    font-weight: lighter;
 }
+
+a:active {}
 
 a:hover, a:active {
     text-decoration: none;
@@ -103,7 +104,7 @@ li {
 }
 
 .clipbyline {
-    text-align: center;
+    text-align: right;
     font-style: italic;
     font-size: 12px;
 }
@@ -124,6 +125,10 @@ li {
 
 .resume p {
     font-size: 14px;
+}
+
+.about {
+    font-weight: lighter;
 }
 
 /**about styles**/
