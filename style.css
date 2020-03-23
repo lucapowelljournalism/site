@@ -91,6 +91,7 @@ li {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .cliplist {
@@ -136,6 +137,12 @@ li {
     font-size: 16px;
     padding-left: 60px;
     padding-right: 60px;
+    text-align: left;
+}
+
+.aboutimage {
+    max-width: 200px;
+    float: right;
 }
 
 /*********************************************************************
