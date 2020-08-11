@@ -53,20 +53,14 @@ a {
 
 a:visited {
     text-decoration: none;
-    color: black;
-    font-weight: lighter;
 }
 
 a:hover {
     text-decoration: none;
-    color: white;
-    font-weight: lighter;
 }
 
 a:focus {
     text-decoration: none;
-    color: black;
-    font-weight: lighter;
 }
 
 a:active {}
@@ -144,6 +138,10 @@ li {
 .aboutimage {
     max-width: 200px;
     float: right;
+}
+
+#title {
+    padding-top: 40px;
 }
 
 /*********************************************************************
