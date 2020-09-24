@@ -46,7 +46,7 @@ img {
     font-weight: lighter;
 }
 
-a {
+.container a {
     text-decoration: none;
     color: black;
 }
@@ -142,6 +142,41 @@ li {
 
 #title {
     padding-top: 40px;
+}
+
+.footer {
+    height: 2em;
+    background-color: #E6E5E6;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer p {
+    color: black;
+    font-size: .70em;
+    font-family: "Roboto", serif;
+    display: inline;
+    padding: 20px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
 }
 
 /*********************************************************************
