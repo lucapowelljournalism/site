@@ -1,52 +1,22 @@
-/*
-This is a good layout for a mobile-first CSS template.
-Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
-Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
-
-Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
-You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
-*/
-/*********************************************************************
- LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
-*********************************************************************/
-@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-/*********************************************************************
-  YOUR MOBILE/BASE STYLES GO HERE
-*********************************************************************/
 * {
     box-sizing: border-box;
 }
 
 html, body {
-    /* Sets default font-size to 16px, ensuring 1em = 16px; */
-    font-size: 20px;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Helvetica", arial, sans-serif;
+    font-weight: normal;
+    letter-spacing: 0px;
+    font-family: "proxima-nova";
+    line-height: 1.6em;
+    text-transform: none;
+    letter-spacing: .02em;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
 }
 
-p {
-    line-height: 1.5em;
-}
-
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-img {
-    width: 100%;
-    border-radius: 5%;
-}
-
-.nav {
-    padding: 20px;
-    text-decoration: none;
-    font-weight: lighter;
-}
-
-.container a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -57,6 +27,7 @@ a:visited {
 
 a:hover {
     text-decoration: none;
+    color: pink;
 }
 
 a:focus {
@@ -67,130 +38,134 @@ a:active {}
 
 a:hover, a:active {
     text-decoration: none;
-    color: black;
 }
 
-li {
-    text-decoration: none;
-    list-style: none;
-}
+@media(min-width: 681px) {}
 
-.navitems {
-    display: inline;
-    padding: 30px;
-    text-decoration: none;
-    color: black;
-}
-
-#clipheader {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.cliplist {
-    line-height: 1.5em;
-    text-align: left;
-}
-
-.clip {
-    text-align: left;
-    padding: 14px;
-}
-
-.clipbyline {
-    text-align: right;
-    font-style: italic;
-    font-size: 12px;
-}
-
-/** resume styles**/
-.experience {
-    margin-top: 35px;
-    font-size: 12px;
-}
-
-.resume {
-    padding-top: : 5px;
-}
-
-.workplace {
-    font-weight: bold;
-}
-
-.resume p {
-    font-size: 14px;
-}
-
-.about {
-    font-weight: lighter;
-}
-
-/**about styles**/
-#about {
-    font-size: 16px;
-    padding-left: 60px;
-    padding-right: 60px;
-    text-align: left;
-}
-
-.aboutimage {
-    max-width: 200px;
-    float: right;
-}
-
-#title {
-    padding-top: 40px;
-}
-
-.footer {
-    height: 2em;
-    background-color: #E6E5E6;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.footer p {
-    color: black;
-    font-size: .70em;
-    font-family: "Roboto", serif;
-    display: inline;
-    padding: 20px;
-}
-
-.footer a {
-    text-decoration: none;
-    color: black;
-}
-
-.footer a:visited {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-}
-
-a:focus {
-    text-decoration: none;
-}
-
-/*********************************************************************
-  YOUR TABLET/DESKTOP STYLES GO HERE
-*********************************************************************/
-@media(min-width: 681px) {
-    /* Any adjustments for tablets and larger go here.
-    Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
-}
-
-/*********************************************************************
-  YOUR DESKTOP-ONLY STYLES GO HERE
-*********************************************************************/
 @media(min-width: 729px) {
-    /* Any adjustments for desktop and larger go here.
-    Note these styles will be applied to anything 729px or larger -- so desktop */
+    .whole-page {
+        margin: 50px;
+        padding: 20px;
+        display: block;
+    }
+
+    /*Left Side*/
+    .nav {
+        text-decoration: none;
+        height: 800px;
+        position: static;
+        max-width: 24.9%;
+        display: inline-block;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-right: 5%;
+        text-align: justify;
+        padding-left: 0;
+    }
+
+    .navitems {
+        list-style-type: none;
+        padding-top: 10px;
+        padding-left: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        list-style: none;
+        padding-left: 0;
+        color: black;
+        margin-block-end: 0em;
+        margin-inline-start: 0px;
+        margin-block-start: 0em;
+    }
+
+    #title {
+        margin: 0;
+        color: #E1ECEC;
+    }
+
+    #subtitle {
+        color: #E1ECEC;
+        padding: 0;
+        margin: 0;
+    }
+
+    /*Right side*/
+    .canvas {
+        display: inline-block;
+        width: 600px;
+        height: 100%;
+        position: absolute;
+    }
+
+    .canvas .hero img {
+        display: block;
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 1%;
+    }
+
+    .abouttext {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Clips Page*/
+    #clipheader {
+        font-size: 1.5em;
+        text-align: right;
+        text-transform: uppercase;
+    }
+
+    .cliplist {
+        line-height: 1em;
+        text-align: left;
+    }
+
+    .clip {
+        text-align: left;
+    }
+
+    .clipbyline {
+        text-align: right;
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    /** resume styles**/
+    .experience {
+        margin-top: 35px;
+        font-size: 12px;
+    }
+
+    .resume {
+        padding-top: : 5px;
+    }
+
+    .workplace {
+        font-weight: bold;
+    }
+
+    .resume p {
+        font-size: 14px;
+    }
+
+    .about {
+        font-weight: lighter;
+    }
+
+    /**about styles**/
+    #about {
+        font-size: 16px;
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: left;
+    }
+
+    .aboutimage {
+        max-width: 200px;
+        float: right;
+    }
 }
