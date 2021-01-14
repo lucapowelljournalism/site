@@ -40,17 +40,64 @@ a:hover, a:active {
     text-decoration: none;
 }
 
-@media(min-width: 681px) {}
+.hide {
+    display: none;
+}
 
-@media(min-width: 729px) {
+@media(min-width: 1px) {
+    .hero {
+        display: none;
+    }
+
+    .inline {
+        display: inline;
+    }
+
+    #about {
+        display: none;
+    }
+
+    .nav {
+        font-size: 1.5em;
+        text-decoration: none;
+        height: 800px;
+        position: relative;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline;
+    }
+
+    .navitems {
+        list-style-type: none;
+        padding-top: 10%;
+        padding-left: 0;
+        display: inline;
+    }
+
+    ul {
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .abouttext {
+        display: none;
+    }
+}
+
+@media(min-width: 629px) {
     .whole-page {
         margin: 50px;
         padding: 20px;
         display: block;
     }
 
+    .hero {
+        display: block;
+    }
+
     /*Left Side*/
     .nav {
+        font-size: 1em;
         text-decoration: none;
         height: 800px;
         position: static;
@@ -67,6 +114,7 @@ a:hover, a:active {
         list-style-type: none;
         padding-top: 10px;
         padding-left: 0;
+        display: block;
     }
 
     ul {
@@ -154,6 +202,10 @@ a:hover, a:active {
 
     .about {
         font-weight: lighter;
+    }
+
+    .abouttext {
+        display: block;
     }
 
     /**about styles**/
