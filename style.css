@@ -1,77 +1,95 @@
+/****** Global Styles *******/
+
 * {
     box-sizing: border-box;
+
 }
 
 html, body {
-    font-family: "Helvetica", arial, sans-serif;
-    font-weight: normal;
+    font-weight: 500;
     letter-spacing: 0px;
-    font-family: "proxima-nova";
     line-height: 1.6em;
     text-transform: none;
     letter-spacing: .02em;
-    font-weight: 400;
     font-style: normal;
     font-size: 14px;
     color: black;
 }
 
+/***** Link Styles *******/
+
 a {
     text-decoration: none;
-    color: black;
-}
+    color:gray;
 
+}
 a:visited {
     text-decoration: none;
+    color:gray;
 }
 
 a:hover {
     text-decoration: none;
-    color: pink;
+    color:paleturquoise;
 }
 
 a:focus {
     text-decoration: none;
-}
+    color:gray;
 
-a:active {}
+}
 
 a:hover, a:active {
     text-decoration: none;
 }
 
-.hide {
-    display: none;
-}
+
+/****** Mobile Styles *******/
 
 @media(min-width: 1px) {
+
+    /*** Image ****/
+    .canvas {
+        margin: 0 auto;
+        width: 80%;
+        overflow: hidden;
+    }
+    
     .hero {
-        display: none;
+        display: block;
+        width: 100%;
+        display: flex;
+        justify-content: center; 
     }
 
-    .inline {
-        display: inline;
+    .hero img{
+        width: 350px;
+        margin: auto;
     }
 
     #about {
-        display: none;
+        display: block;
     }
 
     .nav {
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-decoration: none;
-        height: 800px;
-        position: relative;
         text-transform: uppercase;
         text-align: center;
+        margin: 0 auto;
         display: inline;
     }
 
     .navitems {
+        font-size: 1em;
         list-style-type: none;
         padding-top: 10%;
-        padding-left: 0;
+        padding-left: 20px;
         display: inline;
+    }
+
+    .social-icons{
+        display:none;
     }
 
     ul {
@@ -80,26 +98,140 @@ a:hover, a:active {
     }
 
     .abouttext {
-        display: none;
+        display: block;
+        font-style: italic;
+        margin: 5%;
+    }
+
+    /**Footer Styles**/
+    .social-footer-mobile{
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+    .social-icons{
+        margin-top: 50px;
+    }
+
+    .fa {
+        padding: 20px;
+        font-size: 20px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+    }
+      
+    .fa:hover {
+        opacity: 0.7;
+    }
+      
+      /* Set a specific color for each brand */
+      
+      /* Facebook */
+    .fa-envelope {
+        color: #3B5998;
+    }
+    .fa-envelope:visited {
+        color: #3B5998;
+    }
+      /* Twitter */
+    .fa-twitter {
+        color: #55ACEE;
+    }
+    .fa-twitter:visited {
+        color: #55ACEE;
+    }
+
+    .fa-linkedin {
+        color: #0072b1
+        ;
+    }
+    .fa-linkedin:visited {
+        color: #0072b1
+        ;
+    }
+
+    /*Clips Page*/
+    #clipheader {   /* Lazily gave this to both resume header and clip header*/
+        font-size: 1.5em;
+        font-weight: 800;
+        text-align: center;
+        text-transform: uppercase;
+        margin-bottom: 10%;
+    }
+
+    .cliplist {
+        line-height: 1.5em;
+        text-align: left;
+    }
+
+    .clip a {
+        color: black;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .clipbyline {
+        text-align: left;
+        font-style: italic;
+        font-size: 12px;
+    }
+
+    /** Mobile resume styles **/
+    .experience {
+        font-size: 12px;
+    }
+    .workplace {
+        font-weight: bold;
+    }
+
+    .resume p {
+        font-size: 14px;
+    }
+
+    .about {
+        font-weight: lighter;
+    }
+
+    .abouttext {
+        display: block;
+    }
+
+    /**Mobile-about styles**/
+    #about {
+        font-size: 16px;
+        padding-left: 60px;
+        padding-right: 60px;
+        text-align: left;
+    }
+
+    .aboutimage {
+        max-width: 200px;
+        float: right;
     }
 }
 
-@media(min-width: 629px) {
+@media(min-width: 729px) {
     .whole-page {
-        margin: 50px;
+        margin: 30px;
         padding: 20px;
         display: block;
+        /*height: 100vh;*/
+        max-width: 700px;
     }
 
     .hero {
         display: block;
     }
-
+    .hero img {
+        max-width: 900px;
+    }
     /*Left Side*/
     .nav {
         font-size: 1em;
         text-decoration: none;
-        height: 800px;
+        height: 80%;
         position: static;
         max-width: 24.9%;
         display: inline-block;
@@ -126,14 +258,22 @@ a:hover, a:active {
         margin-inline-start: 0px;
         margin-block-start: 0em;
     }
+    .social-icons{
+        display: flex;
+        justify-content: left;
+        margin-top: 10px;
+    }
 
+    .fa {
+        width: 30px;
+    }
     #title {
         margin: 0;
-        color: #E1ECEC;
+        color: gray;
     }
 
     #subtitle {
-        color: #E1ECEC;
+        color: gray;
         padding: 0;
         margin: 0;
     }
@@ -141,8 +281,7 @@ a:hover, a:active {
     /*Right side*/
     .canvas {
         display: inline-block;
-        width: 600px;
-        height: 100%;
+        width: 60%;
         position: absolute;
     }
 
@@ -189,7 +328,7 @@ a:hover, a:active {
     }
 
     .resume {
-        padding-top: : 5px;
+        padding-top: 5px;
     }
 
     .workplace {
@@ -219,5 +358,11 @@ a:hover, a:active {
     .aboutimage {
         max-width: 200px;
         float: right;
+    }
+
+        /**Footer Styles**/
+    .social-footer-mobile{
+        display: none;
+        font-size: 45px;
     }
 }
