@@ -45,8 +45,7 @@ a:hover, a:active {
 
 body{ 
     opacity: 0;
-    transition: opacity 5s;
-    -webkit-transition: opacity .75s; /* Safari */
+    transition: opacity .75s;
 }
 
 /****** Mobile Styles *******/
