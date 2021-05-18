@@ -14,6 +14,11 @@ html, body {
     font-style: normal;
     font-size: 14px;
     color: black;
+    font-family: "Noto Sans", sans-serif;
+}
+
+h1{
+    font-family: Oswald, sans-serif;
 }
 
 /***** Link Styles *******/
@@ -59,6 +64,10 @@ body{
         overflow: hidden;
     }
     
+    .canvas h1{
+        text-align: center;
+    }
+
     .hero {
         display: block;
         width: 100%;
@@ -158,15 +167,9 @@ body{
     }
 
     /*Clips Page*/
-    #clipheader {   /* Lazily gave this to both resume header and clip header*/
-        font-size: 1.5em;
-        font-weight: 800;
-        text-align: center;
-        text-transform: uppercase;
-        margin-bottom: 10%;
-    }
 
     .cliplist {
+        margin-top: 50px;
         line-height: 1.15em;
         text-align: left;
     }
@@ -182,6 +185,7 @@ body{
         text-align: left;
         font-style: italic;
         font-size: 12px;
+
     }
 
     /** Mobile resume styles **/
@@ -234,7 +238,9 @@ body{
         max-width: 900px;
     }
 
-    
+    .canvas h1{
+        text-align: left;
+    }    
     /*Left Side*/
     .nav {
         font-size: 1em;
@@ -289,7 +295,7 @@ body{
     #subtitle {
         color: gray;
         padding: 0;
-        margin: 0;
+        margin-top: 10;
     }
 
     /*Right side*/
@@ -316,21 +322,21 @@ body{
     /*Clips Page*/
     #clipheader {
         font-size: 1.5em;
-        text-align: right;
         text-transform: uppercase;
     }
 
     .cliplist {
+        margin-top: 50px;
         line-height: 1em;
         text-align: left;
     }
 
     .clip {
         text-align: left;
+        margin: 25px;
     }
 
     .clipbyline {
-        text-align: right;
         font-style: italic;
         font-size: 12px;
     }
@@ -379,4 +385,32 @@ body{
         display: none;
         font-size: 45px;
     }
+}
+
+/**Projects Styles**/
+
+.card{
+    height: 300px;
+    width: 550px;
+    margin: 5%;
+    background-color: whitesmoke;
+}
+.thumbnail {
+    display: inline-block;
+    width: 65%;
+    float: left;
+
+}
+
+.thumbnail img{
+    border-radius: 1%;
+}
+
+.card-text{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    width: 32%;
+    height: 100%;
+    padding-top:15%;
 }
