@@ -1,6 +1,5 @@
 @import url(//fonts.googleapis.com/css?family=Oswald|Noto+Sans)
 
-
 /****** Global Styles *******/
 
 * {
@@ -58,6 +57,7 @@ body{
     opacity: 0;
     transition: opacity .75s;
 }
+
 
 /****** Mobile Styles *******/
 
@@ -179,7 +179,9 @@ body{
         line-height: 1.15em;
         text-align: left;
     }
-
+    .clip{
+        margin-top:30px;
+    }
     .clip a {
         color: black;
         font-size: 16px;
@@ -191,7 +193,6 @@ body{
         text-align: left;
         font-style: italic;
         font-size: 12px;
-
     }
 
     /** Mobile resume styles **/
@@ -283,7 +284,9 @@ body{
         margin-block-end: 0em;
         margin-inline-start: 0px;
         margin-block-start: 0em;
+        margin-top: 20px;
     }
+
     .social-icons{
         display: flex;
         justify-content: left;
